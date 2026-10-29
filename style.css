@@ -424,8 +424,12 @@ QUALITY WORK ↓
     border-radius: 500px;
     padding: 12px 32px;
     font-weight: bold;
+    margin-top: 24px;
     transition: all 400ms ease;
     cursor: pointer;
+ }
+ .section__para{
+ margin: 0;
  }
 /* 
 
@@ -1151,6 +1155,7 @@ MOBILE RESPONSIVENESS ↓
 
 @media (max-width:1024px) {
     .header__description{
+        width: 100%;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -1214,6 +1219,7 @@ MOBILE RESPONSIVENESS ↓
 @media (max-width:1280px) {
     .header__img{
         max-width: 514px;
+       
     }
 }
  @media (max-width: 1024px) {
@@ -1234,6 +1240,10 @@ MOBILE RESPONSIVENESS ↓
         max-width: 384px;
        
     }
+    .feature__row{
+        flex-direction: column;
+        align-items: center;
+    }
 }
 @media (max-width: 1024px) {
     .feature__row{
@@ -1247,6 +1257,7 @@ MOBILE RESPONSIVENESS ↓
     .feature__title{
         line-height: 0.025rem;
         line-height: 1;
+        
     }
     .feature__para{
         margin-top: 4px;
@@ -1259,26 +1270,53 @@ MOBILE RESPONSIVENESS ↓
         display: flex;
         flex-direction: row;
     }
+    .feature__text{
+        text-align: center;
+    }
+   
 }
 
 /*
-Quality
+values
 
 */
-
+@media (max-width: 1024) {
+    .values__list{
+        max-width: 20rem;
+        flex-direction: column;
+    }
+}
 @media (max-width:768px) {
-    .quality__description, .values__description,.values__img{
+    .quality__description, .values__description,.values__description,.values__img{
         width: 100%;
         max-width: 448px;
+        
     }
-    .section__para{
+    .quality__section--para{
         font-size: 14px;
+        text-align: center;
+
    
     }
-
+    .value:nth-child-of-type(1){
+        margin-right: 0px;
+    }
+    .list{
+        flex-direction: column;
+        text-align: center;
+    }
+    .values__description{
+        align-items: center;
+        margin-bottom: 24px;
+    }
+  .values__section--title{
+    text-align: center;
+    margin: 24px 0;
+  }
     .values__list{
         margin-left: auto;
         margin-right: auto;
+    
         
     }
     .value:nth-child(1){
@@ -1291,6 +1329,38 @@ Quality
         margin-left: 16px;
     }
 }
+
+/*
+STEPS
+
+*/
+@media (max-width: 768px) {
+   .steps__description{
+   width: 100%;
+   max-width: 448px;
+} 
+.section__tag{
+   text-align: center;
+}
+.step{
+    flex-direction: column;
+    align-items: center;
+}
+.step__description{
+    margin-top: 12px;
+    margin-left: 0;
+
+}
+}
+@media (max-width: 740px){
+.section__title{
+    margin: 16px 0 0 0;
+}
+.steps__list{
+    margin-top: 48px;
+}
+}
+
 
 /*
 
@@ -1330,7 +1400,12 @@ Pricing
         max-width: 448px;
         margin-bottom: 48px;
     }
-
+ 
+.user__love{
+    width: 100%;
+    max-width: 448px;
+    text-align: center;
+}
     #testimonials .row{
         flex-direction: column;
     }
